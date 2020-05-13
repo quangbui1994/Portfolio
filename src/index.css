@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.6rem
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1 {
+  color: rgb(153, 153, 153);
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: rgb(153, 153, 153);
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+p {
+  margin:0;
+}

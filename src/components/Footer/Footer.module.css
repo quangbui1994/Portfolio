@@ -1,0 +1,40 @@
+.Footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    flex-wrap: wrap;
+}
+
+.svg {
+    width: 3rem;
+    height: 3rem;
+    fill: rgb(79, 78, 77);
+    transition: all .4s ease;
+    margin: 0 .5rem;
+}
+
+.svg path {
+    stroke: rgb(79, 78, 77);
+    stroke-width: 10px;
+}
+
+.svg:hover {
+    fill: rgb(153, 153, 153);
+}
+
+.svg:hover path {
+    stroke: rgb(153, 153, 153);
+    stroke-width: 5px;
+}
+
+.copyright {
+    color: rgb(79, 78, 77);
+    font-size: 1.2rem;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
