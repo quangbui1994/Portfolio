@@ -15,16 +15,7 @@ class WeatherApp extends Component {
         image: Image,
     }
 
-    shouldComponentUpdate(nextProps, nextStates) {
-        if (this.props !== nextProps) {
-            return false;
-        } else {
-            return false;
-        }
-    }
-
     render() {
-        console.log(this.props);
         const { name, image, description, paragraph, technologies, resources } = this.state;
         return (
             <Application 

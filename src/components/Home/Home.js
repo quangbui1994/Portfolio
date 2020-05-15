@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import './Home.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Trail, animated } from 'react-spring/renderprops';
 import { config } from 'react-spring';
+
+import './Home.css';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import Footer from '../Footer/Footer';
 
@@ -44,8 +45,7 @@ class Home extends React.Component {
                                     style={{
                                     opacity,
                                     transform: y.interpolate(y => `translate3d(0,${y}%,0)`),
-                                    }}
-                                >
+                                    }}>
                                     <Link to={item.to} onClick={this.toggle}>{item.name}</Link>
                                 </animated.div>
                             )}

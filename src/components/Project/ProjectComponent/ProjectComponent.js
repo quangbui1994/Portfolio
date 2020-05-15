@@ -1,8 +1,9 @@
 import React from 'react';
 import { Trail, animated } from 'react-spring/renderprops';
 import { config } from 'react-spring';
-import './ProjectComponent.css';
 import { withRouter } from 'react-router';
+
+import './ProjectComponent.css';
 
 class ProjectComponent extends React.Component {
     state = {

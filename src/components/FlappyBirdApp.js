@@ -9,7 +9,7 @@ class FlappyBirdApp extends Component {
         paragraph: ['Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.', 'At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project.'],
         technologies: ['React'],
         resources: {
-            website: 'https://github.com/quangbui1994/Flappy-bird-react',
+            website: 'https://flapy-bird.netlify.app/',
             github: 'https://github.com/quangbui1994/Flappy-bird-react'
         },
         image: Image

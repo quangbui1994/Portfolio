@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+
 import styles from './Application.module.css';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import Footer from '../Footer/Footer';

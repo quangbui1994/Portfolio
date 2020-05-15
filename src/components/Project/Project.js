@@ -1,14 +1,14 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
+
 import './Project.css';
 import WeatherApp from '../../assets/img/WeatherApp.jpg';
 import RestaurantApp from '../../assets/img/RestaurantApp.jpg';
 import FlappyBirdApp from '../../assets/img/FlappyBirdApp.jpg';
 import CovidTracker from '../../assets/img/CovidTracker.jpg';
-import ProjectComponent from './ProjectComponent/ProjectComponent';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
-import Footer from '../Footer/Footer';
+import { Footer, ProjectComponent } from '../index';
 
 const Project = () => {
     const projects = [
