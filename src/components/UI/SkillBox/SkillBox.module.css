@@ -1,6 +1,6 @@
 .SkillBox {
     display: inline-block;
-    padding: 0 .5em;
+    padding: 0 1rem;
     background-color: #313131;
     color: #999;
     border-width: 1px 1px 2px 1px;
@@ -10,10 +10,10 @@
     text-transform: uppercase;
     font-family: 'Open Sans',Arial,sans-serif;
     font-weight: 700;
-    font-size: .75rem;
+    font-size: 1.6rem;
     box-shadow: 1px 1px 0 rgba(0,0,0,.25);
     margin: 2px;
-    opacity: 0;
+    /* opacity: 0; */
     position: relative;
     text-shadow: -1px -1px 0 #3f3f3f, -1px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, 0 -1px 0 #3f3f3f, 0 0 0 #3f3f3f, 0 1px 0 #3f3f3f, 1px -1px 0 #3f3f3f, 1px 0 0 #3f3f3f, 1px 1px 0 #3f3f3f;
 }

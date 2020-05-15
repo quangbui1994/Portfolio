@@ -3,8 +3,42 @@
   min-height: 100vh;
   background: rgb(24, 24, 24);
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url('https://66.media.tumblr.com/6b40144a4ef55605dbaca5850c395f92/tumblr_mrnjifu8Li1rsq9eyo1_500.gifv');
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url('./assets/img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.App .modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a2a2a;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateX(-100%); */
+  opacity: 0;
+}
+
+.modal--item {
+  width: 40rem;
+  padding: 2.5rem;
+  background-color: #242424;;
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 3.6rem;
+  text-align: center;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.modal--item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.modal--item:hover {
+  color: rgb(153, 153, 153);
 }

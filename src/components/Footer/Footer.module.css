@@ -1,12 +1,12 @@
 .Footer {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     display: flex;
     justify-content: center;
     width: 40rem;
+    margin: 0 auto;
     flex-wrap: wrap;
+    z-index: 100;
+    margin-top: auto;
 }
 
 .svg {

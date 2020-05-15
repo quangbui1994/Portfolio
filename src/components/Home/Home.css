@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    height: 100vh;
     margin: 0 auto;
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 .mainNav {
@@ -27,7 +28,7 @@
     cursor: pointer;
     position: relative;
     text-align: center;
-    transition: all .5s ease;
+    will-change: transform;
 }
 
 .mainNav__item a {
@@ -57,11 +58,3 @@
     transform: scale(1);
 }
 
-.mainNavItem-enter {
-    opacity: 0;
-}
-
-.mainNavItem-enter-active {
-    opacity: 1;
-    transform: all 1s ease;
-}

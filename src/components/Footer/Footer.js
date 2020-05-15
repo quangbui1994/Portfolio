@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { ReactComponent as Facebook} from '../../img/logo-facebook.svg';
-import { ReactComponent as Github} from '../../img/logo-github.svg';
-import { ReactComponent as Linkedin} from '../../img/logo-linkedin.svg';
-import { Link } from 'react-router-dom';
+import { ReactComponent as Facebook} from '../../assets/icons/logo-facebook.svg';
+import { ReactComponent as Github} from '../../assets/icons/logo-github.svg';
+import { ReactComponent as Linkedin} from '../../assets/icons/logo-linkedin.svg';
 
 const Footer = () => (
     <div className={styles.Footer}>

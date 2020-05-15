@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
@@ -28,11 +27,11 @@
     box-shadow: none;
 }
 
-.selected:hover > .slide-wrapper .modal {
+.selected > .slide-wrapper:hover .slide-modal {
     transform: scaleY(1);
 }
 
-.modal {
+.slide-modal {
     position: absolute;
     width: calc(100% - 4rem);
     height: 70%;
@@ -44,4 +43,40 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: all .2s ease;
+    padding-top: 4.5rem;
+}
+
+.slide-modal__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    background-color: #16a085;
+    color: rgb(235, 241, 248);
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+}
+
+.SkillBox {
+    display: inline-block;
+    padding: 0 .5rem;
+    background-color: #313131;
+    color: #999;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.25);
+    margin: 2px;
+    position: relative;
+    will-change: transform;
+    user-select: none;
+    text-shadow: -1px -1px 0 #3f3f3f, -1px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, 0 -1px 0 #3f3f3f, 0 0 0 #3f3f3f, 0 1px 0 #3f3f3f, 1px -1px 0 #3f3f3f, 1px 0 0 #3f3f3f, 1px 1px 0 #3f3f3f;
 }

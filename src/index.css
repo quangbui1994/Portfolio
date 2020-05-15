@@ -33,25 +33,56 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
 }
 
 h1 {
-  color: rgb(153, 153, 153);
   font-size: 4.5rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  color: rgb(153, 153, 153);
   font-size: 1.8rem;
   font-weight: 300;
   font-style: italic;
 }
 
+h3 {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  color: rgba(255, 250, 240, 0.767);
+}
+
+h3::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: rgba(153, 153, 153, 0.3);
+  left: 0;
+  bottom: -1rem;
+  
+}
+
 p {
-  margin:0;
+  margin: 0;
+  color: rgb(153, 153, 153);
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
 }

@@ -1,0 +1,75 @@
+.Nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: fixed;
+    right: 4rem;
+    top: 2rem;
+    z-index: 10;
+    transition: all .5s ease;
+}
+
+.Nav input {
+    display: none;
+}
+
+.checkBoxLabel {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkBoxLabel div {
+    position: relative;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(153, 153, 153);
+    transition: all .2s ease;
+}
+
+.checkBoxLabel div::before, .checkBoxLabel div::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(153, 153, 153);
+    transition: all .2s ease;
+}
+
+.checkBoxLabel div::before {
+    top: 1rem;
+}
+
+.checkBoxLabel div::after {
+    top: -1rem;
+}
+
+.checkBoxLabel:hover div::before {
+    top: 1.2rem;
+}
+
+.checkBoxLabel:hover div::after {
+    top: -1.2rem;
+}
+
+
+.Nav input:checked + .checkBoxLabel div{
+    background-color: transparent;
+}
+
+.Nav input:checked + .checkBoxLabel div::after{
+    top: 0rem;
+    transform: rotate(135deg);
+}
+
+.Nav input:checked + .checkBoxLabel div::before{
+    top: 0rem;
+    transform: rotate(-135deg);
+}

@@ -1,0 +1,98 @@
+.Application {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 25%;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+}
+
+.Application button {
+    padding: 1rem 1.5rem;
+    background-color: #16a085;
+    color: rgb(235, 241, 248);
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px #16a0847e;
+    transition: all .3s ease;
+}
+
+.Application button:hover {
+    transform: translate3d(0,-2px,0);
+    box-shadow: 0px 2px 5px #16a085;
+}
+
+.Application button:focus {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 2px #16a085;
+}
+
+.heroImageWrapper {
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+    position: relative;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.heroImage img {
+    width: 100%;
+}
+
+.heroImageWrapper::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 10px;
+    background-color:rgba(24, 24, 24, 0.438);
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.technology li {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.technology li::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    border: 1px solid rgb(153, 153, 153);
+    top: 50%;
+    left: -1.5rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+}
+
+.resources h3 {
+    align-self: flex-start;
+}
+
+.resource__link {
+    text-decoration: underline;
+    color: rgba(255, 250, 240, 0.7);
+}
