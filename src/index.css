@@ -86,3 +86,43 @@ p {
 li {
   list-style: none;
 }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Iphone 5/SE */
+@media (max-height: 568px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 1023px) and (min-height: 1365px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}

@@ -28,22 +28,24 @@ class ProjectComponent extends React.Component {
         return (
             <div className="slide-wrapper" onMouseLeave={this.exitHoverHandler} onMouseEnter={this.onHoverHandler}>
                 <div className="slide-modal">
-                    <Trail 
-                        config={config.wobbly}
-                        reverse={showModal}
-                        native
-                        initial={null}
-                        keys={item => item}
-                        items={skillsets}
-                        to={{ opacity: showModal ? 1 : 0, y: showModal ? 100 : 0 }}>
-                        {item => ({ opacity, y }) => (
-                            <animated.div 
-                                className="SkillBox" 
-                                style={{ opacity, transform: y.interpolate(y => `translate3d(0,${y}%,0)`), }}>
-                                {item}
-                            </animated.div>
-                        )}  
-                    </Trail>
+                    <div className="skill-wrapper">
+                        <Trail 
+                            config={config.wobbly}
+                            reverse={showModal}
+                            native
+                            initial={null}
+                            keys={item => item}
+                            items={skillsets}
+                            to={{ opacity: showModal ? 1 : 0, y: showModal ? 100 : 0 }}>
+                            {item => ({ opacity, y }) => (
+                                <animated.div 
+                                    className="SkillBox" 
+                                    style={{ opacity, transform: y.interpolate(y => `translate3d(0,${y}%,0)`), }}>
+                                    {item}
+                                </animated.div>
+                            )}  
+                        </Trail>
+                    </div>
                     <button onClick={() => this.viewProjectHandler(name)} className="slide-modal__button">View website</button>
                 </div>
                 

@@ -6,7 +6,7 @@ class WeatherApp extends Component {
     state = {
         name: 'Weather App',
         description: 'The weather forecast application powered by React',
-        paragraph: ['Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.', 'At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project.'],
+        paragraph: ['The Weather App is a React web application built to help people get the weather situation at all cities in the world. The registered users could even save their desired cities to quickly update every time logging in. Moreover, the weather map which integrated with the app allow people to quickly get information by just clicking anywhere with highly precise.', 'I have used React and Redux to build the front-end of the app, back end was created with NodeJs and MongoDB is utilized to store database. The OAuth authentication has been integrated based on PassportJs along with traditional authentication. The Leaflet library also used to implement the map.'],
         technologies: ['React', 'NodeJS', 'MongoDB', 'Leaflet', 'Redux', 'Passport', 'Bootstrap'],
         resources: {
             website: 'https://quang-weather-app.herokuapp.com/',

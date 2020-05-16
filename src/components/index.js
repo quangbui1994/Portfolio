@@ -1,5 +1,6 @@
 export { default as FlappyBirdApp } from './FlappyBirdApp';
 export { default as CovidTrackerApp } from './CovidTrackerApp';
+export { default as SkillScannerApp } from './SkillScannerApp';
 export { default as RestaurantApp } from './RestaurantApp';
 export { default as WeatherApp } from './WeatherApp';
 export { default as Project } from './Project/Project';

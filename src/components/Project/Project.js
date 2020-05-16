@@ -7,11 +7,13 @@ import WeatherApp from '../../assets/img/WeatherApp.jpg';
 import RestaurantApp from '../../assets/img/RestaurantApp.jpg';
 import FlappyBirdApp from '../../assets/img/FlappyBirdApp.jpg';
 import CovidTracker from '../../assets/img/CovidTracker.jpg';
+import SkillScannerApp from '../../assets/img/SkillscannerApp.jpg';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import { Footer, ProjectComponent } from '../index';
 
 const Project = () => {
     const projects = [
+        {name: 'skillscanner-app', image: SkillScannerApp, skillsets: ['React', 'Firebase', 'Firestore']},
         {name: 'weather-app', image: WeatherApp, skillsets: ['React', 'NodeJS', 'MongoDB', 'Leaflet', 'Redux', 'Passport', 'Bootstrap']},
         {name: 'restaurant-app', image: RestaurantApp, skillsets: ['React', 'AWS', 'Cognito', 'DynamoDB', 'Lambda', 'MaterialUI']},
         {name: 'flappy-bird-app', image: FlappyBirdApp, skillsets: ['React']},

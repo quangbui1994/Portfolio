@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { __RouterContext, Route, Switch } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 
-import { Home, Nav, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, Project, About } from './components';
+import { Home, Nav, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, Project, About, SkillScannerApp } from './components';
 import './App.css';
 
 const App = () => {
@@ -28,6 +28,7 @@ const App = () => {
             <Route path="/projects/restaurant-app" component={RestaurantApp} />
             <Route path="/projects/flappy-bird-app" component={FlappyBirdApp} />
             <Route path="/projects/covid-tracker" component={CovidTrackerApp} />
+            <Route path="/projects/Skillscanner-app" component={SkillScannerApp} />
           </Switch>  
         </animated.div>
       ))}

@@ -6,7 +6,7 @@ class RestaurantApp extends Component {
     state = {
         name: 'Restaurant App',
         description: 'The serverless application using AWS services offer fast and delicious meals',
-        paragraph: ['Project developed as a contractor with the SKY GO (UK) Desktop team. The Sky Go Desktop app is a React web application build on top of the Electron framework.', 'At this project I acted as the lead UI/UX developer specialist being the bridge between UI/UX Design, PO and the UI development team. The main challenge was to reorganize the UI structure from a react-virtualized grid into a pure CSS one. Which improved drastically the scalability and maintainability of the project.'],
+        paragraph: ['Restaurant App offers you various best fast food restaurants in Helsinki. People could log in and do a quick search to be served with great choices.', 'The App is implemented based on React and CSS framework MaterialUI. Meanwhile, the back end was built on top of Amazon Web Services. The API was launched on Lambda services which triggered immediately and only when clients make a search request. The database of users is saved to DynamoDB. The whole app using the IAM service and Cognito for authentication and authorization. I built this as my side project to start using AWS services simply to build serverless stack application.'],
         technologies: ['React', 'AWS', 'Cognito', 'DynamoDB', 'Lambda', 'MaterialUI'],
         resources: {
             website: 'https://restaurant-serverless.netlify.app/',

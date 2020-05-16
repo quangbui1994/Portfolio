@@ -82,7 +82,8 @@
 }
 
 .modal__item {
-    width: 40rem;
+    width: 80%;
+    max-width: 40rem;
     padding: 2.5rem;
     background-color: #242424;;
     color: #5a5a5a;
