@@ -43,7 +43,7 @@
     z-index: 2;
     transform: scaleY(0);
     transform-origin: top;
-    transition: all .2s ease;
+    transition: all .5s ease;
     /* padding-top: 4.5rem;  */
     display: flex;
     flex-direction: column; 

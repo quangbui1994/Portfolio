@@ -7,7 +7,7 @@ class FlappyBirdApp extends Component {
         name: 'Flappy Bird App',
         description: 'The simple Flappy Bird game build on React based',
         paragraph: ['A simple mobile application rebuilt with React technology.', 'Instead of using game engine, I built the game with React library. It might not give the best experience for users but I hope it could somehow enjoy people.'],
-        technologies: ['React'],
+        technologies: ['React', 'Redux'],
         resources: {
             website: 'https://flapy-bird.netlify.app/',
             github: 'https://github.com/quangbui1994/Flappy-bird-react'

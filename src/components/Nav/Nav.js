@@ -66,8 +66,9 @@ const Nav = ({ history }) => {
 
     const routingHandler = link => {
         setTimeout(() => history.push(link), 1500);
+        setTimeout(() => window.scrollTo(0,0), 1000);
         showModalHandler();
-    }
+    };
 
     return (
         <div className={styles.Nav}>

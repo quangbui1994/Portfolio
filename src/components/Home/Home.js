@@ -12,7 +12,6 @@ class Home extends React.Component {
         list: [
             { name: 'About me', to: '/about', key: 0 }, 
             { name: 'Projects', to: '/projects', key: 1 }, 
-            { name: 'Projects', to: '/projects', key: 2 }
         ],
         toggle: true
     }
@@ -28,8 +27,8 @@ class Home extends React.Component {
         return (
             <AbsoluteWrapper>
                 <div className="Home">
-                    <h1>Here is my portfolio</h1>
-                    <h2>A newbie developer with desginer's heart</h2>
+                    <h1>Developer portfolio</h1>
+                    <h2>A developer with desginer's heart</h2>
                     <div className="mainNav" onClick={this.toggle}>
                         <Trail
                             config={ config.stiff }
