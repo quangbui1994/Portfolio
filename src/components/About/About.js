@@ -65,7 +65,7 @@ const About = ({ history }) => {
                 </animated.div>
                 <animated.div style={propsSecond} className={styles.section} ref={secondRef}>
                     <h1>Experience</h1>
-                    <p>I have worked as Fullstack developer trainee for 3 months and started working officially at Globuzzer before stopping on this January due to studying. At Globuzzer, I was responsible to build the front end and back end of very first new module Skillscanner application. That was great experience to me when I have been training and working with lots of technology and it taught me how to teamwork and communicate in professional working environment.</p><br/>
+                    <p>I have worked as Fullstack developer at Globuzzer. I was responsible to build the front end and back end of very first new module Skillscanner application. That was great experience to me when I have been training and working with lots of technology and it taught me how to teamwork and communicate in professional working environment.</p><br/>
         
                     <p>Before working for Globuzzer, I was a freelancer. This period helps me improve my personal skills and technical skill as well. I learnt time management skills, how to solve skills independently and working under pressure a lot.</p><br/>
                     

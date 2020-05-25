@@ -1,9 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, lazy, Suspense } from 'react';
 import { __RouterContext, Route, Switch } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 
-import { Home, Nav, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, Project, About, SkillScannerApp } from './components';
+import { Nav, Home, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, SkillScannerApp } from './components';
 import './App.css';
+
+//LAZY LOADS
+const AboutLazy = import('./components/About/About');
+const ProjectLazy = import('./components/Project/Project');
+const About = lazy(() => AboutLazy);
+const Project = lazy(() => ProjectLazy);
+
+const loading = (<>Loading</>);
 
 const App = () => {
   const { location } = useContext(__RouterContext);
@@ -18,6 +26,7 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
+      <Suspense fallback={loading}>
       {transtions.map(({ item, key, props}) => (
         <animated.div key={key} style={props}>
           <Switch location={item} >
@@ -32,6 +41,7 @@ const App = () => {
           </Switch>  
         </animated.div>
       ))}
+      </Suspense>
     </div>
   )
 };
