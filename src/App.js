@@ -3,7 +3,7 @@ import { __RouterContext, Route, Switch } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 
 import { Nav, Home, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, SkillScannerApp } from './components';
-import './App.css';
+import styles from './App.module.css';
 
 //LAZY LOADS
 const AboutLazy = import('./components/About/About');
@@ -24,12 +24,12 @@ const App = () => {
   });
 
   return (
-    <div className="App">
+    <div className={styles.container}>
       <Nav />
       <Suspense fallback={loading}>
       {transtions.map(({ item, key, props}) => (
         <animated.div key={key} style={props}>
-          <Switch location={item} >
+          <Switch location={item}>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" exact component={Project} />
