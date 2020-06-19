@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image from '../assets/img/SkillscannerApp.jpg';
+import Image1 from '../assets/img/skillscanner/image1.jpg';
+import Image2 from '../assets/img/skillscanner/image2.jpg';
+import Image3 from '../assets/img/skillscanner/image3.jpg';
 
 class SkillScannerApp extends Component {
     state = {
@@ -11,7 +13,7 @@ class SkillScannerApp extends Component {
         resources: {
             website: 'https://skillscanner.globuzzer.com/',
         },
-        image: Image
+        image: [Image1, Image2, Image3]
     }
     render() {
         const { name, image, description, paragraph, technologies, resources } = this.state;

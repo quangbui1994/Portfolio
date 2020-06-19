@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image from '../assets/img/CovidTracker.jpg';
+import Image1 from '../assets/img/covidtracker/image1.jpg';
+import Image2 from '../assets/img/covidtracker/image2.jpg';
 
 class CovidTrackerApp extends Component {
     state = {
@@ -12,7 +13,7 @@ class CovidTrackerApp extends Component {
             website: 'https://covid19-autotrack.netlify.app/',
             github: 'https://github.com/quangbui1994/Covid-Tracker'
         },
-        image: Image
+        image: [Image1, Image2]
     }
     render() {
         const { name, image, description, paragraph, technologies, resources } = this.state;

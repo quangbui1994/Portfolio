@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image from '../assets/img/FlappyBirdApp.jpg';
+import Image1 from '../assets/img/flappybird/image1.jpg';
+import Image2 from '../assets/img/flappybird/image2.jpg';
+import Image3 from '../assets/img/flappybird/image3.jpg';
 
 class FlappyBirdApp extends Component {
     state = {
@@ -12,7 +14,7 @@ class FlappyBirdApp extends Component {
             website: 'https://flapy-bird.netlify.app/',
             github: 'https://github.com/quangbui1994/Flappy-bird-react'
         },
-        image: Image
+        image: [Image3, Image2]
     }
     render() {
         const { name, image, description, paragraph, technologies, resources } = this.state;

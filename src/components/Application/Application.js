@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Application.module.css';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
+import DragableGallery from '../DragableGallery/DragableGallery';
 
 const Application = ({ name, image, description, paragraph, technologies, resources }) => {
     return (
@@ -11,9 +11,12 @@ const Application = ({ name, image, description, paragraph, technologies, resour
             <div className={styles.Application}>
                 <h1>{name}</h1>
                 <h2>{description}</h2>
-                <button onClick={() => window.open(resources.website, '_blank')}>Visit the website</button> 
+                <div>
+                    <button onClick={() => window.open(resources.website, '_blank')}>Visit the website</button> 
+                    <span className={styles.dragNoti}>Drag for more pictures</span> 
+                </div>
                 <div className={styles.heroImageWrapper}>
-                    <div className={styles.heroImage}><img src={image} alt={`${name}`}/></div>
+                    <DragableGallery image={image}/>
                 </div>
                 <section className={styles.about}>
                     <h3>Description</h3>

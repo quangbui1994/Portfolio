@@ -3,11 +3,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import './Project.css';
-import WeatherApp from '../../assets/img/WeatherApp.jpg';
-import RestaurantApp from '../../assets/img/RestaurantApp.jpg';
-import FlappyBirdApp from '../../assets/img/FlappyBirdApp.jpg';
-import CovidTracker from '../../assets/img/CovidTracker.jpg';
-import SkillScannerApp from '../../assets/img/SkillscannerApp.jpg';
+import WeatherApp from '../../assets/img/weather/image1.jpg';
+import RestaurantApp from '../../assets/img/restaurant/image1.jpg';
+import FlappyBirdApp from '../../assets/img/flappybird/image1.jpg';
+import CovidTracker from '../../assets/img/covidtracker/image1.jpg';
+import SkillScannerApp from '../../assets/img/skillscanner/image1.jpg';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import { Footer, ProjectComponent } from '../index';
 

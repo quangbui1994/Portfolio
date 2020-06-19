@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image from '../assets/img/WeatherApp.jpg';
+import Image1 from '../assets/img/weather/image1.jpg';
+import Image2 from '../assets/img/weather/image2.jpg';
+import Image3 from '../assets/img/weather/image3.jpg';
 
 class WeatherApp extends Component {
     state = {
@@ -12,7 +14,7 @@ class WeatherApp extends Component {
             website: 'https://quang-weather-app.herokuapp.com/',
             github: 'https://github.com/quangbui1994/WeatherReactApp'
         },
-        image: Image,
+        image: [Image1, Image2, Image3],
     }
 
     render() {

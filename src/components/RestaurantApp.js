@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image from '../assets/img/RestaurantApp.jpg';
+import Image1 from '../assets/img/restaurant/image1.jpg';
+import Image2 from '../assets/img/restaurant/image2.jpg';
+import Image3 from '../assets/img/restaurant/image3.jpg';
+import Image4 from '../assets/img/restaurant/image4.jpg';
 
 class RestaurantApp extends Component {
     state = {
@@ -12,7 +15,7 @@ class RestaurantApp extends Component {
             website: 'https://restaurant-serverless.netlify.app/',
             github: 'https://github.com/quangbui1994/restaurant-serverless-client'
         },
-        image: Image
+        image: [Image1, Image2, Image3, Image4]
     }
     render() {
         const { name, image, description, paragraph, technologies, resources } = this.state;
