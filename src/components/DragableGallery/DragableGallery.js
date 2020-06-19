@@ -1,17 +1,9 @@
 import React from 'react';
-import { animated, userSprings, useSprings } from 'react-spring';
+import { animated, useSprings } from 'react-spring';
 import clamp from 'lodash-es/clamp';
 import styles from './DragableGallery.module.css';
 import { useDrag } from 'react-use-gesture';
 import { useRef } from 'react';
-
-// const pages = [
-//     'https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//     'https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//     'https://images.pexels.com/photos/4397899/pexels-photo-4397899.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-//     'https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//     'https://images.pexels.com/photos/924675/pexels-photo-924675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-// ];
 
 const DragableGallery = ({ image }) => {
     const index = useRef(0);

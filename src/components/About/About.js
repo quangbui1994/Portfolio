@@ -4,7 +4,7 @@ import { useSpring, animated, config } from 'react-spring';
 import styles from './About.module.css';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import Footer from '../Footer/Footer';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 const About = ({ history }) => {
     const firstRef = useRef();
@@ -36,7 +36,6 @@ const About = ({ history }) => {
     useEffect(() => {
         const topPosition = ref => ref.current.getBoundingClientRect().top;
 
-        const firstPos = topPosition(firstRef);
         const secondPos = topPosition(secondRef);
 
         const onScroll = () => {

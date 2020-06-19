@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Application from './Application/Application';
-import Image1 from '../assets/img/flappybird/image1.jpg';
 import Image2 from '../assets/img/flappybird/image2.jpg';
 import Image3 from '../assets/img/flappybird/image3.jpg';
 
