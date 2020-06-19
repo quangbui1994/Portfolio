@@ -13,7 +13,7 @@ class Home extends React.Component {
             { name: 'About me', to: '/about', key: 0 }, 
             { name: 'Projects', to: '/projects', key: 1 }, 
         ],
-        toggle: true
+        toggle: true,
     }
 
     componentDidMount() {
