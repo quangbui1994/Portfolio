@@ -2,7 +2,7 @@ import React, { useContext, lazy, Suspense } from 'react';
 import { __RouterContext, Route, Switch } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 
-import { Nav, Home, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, SkillScannerApp } from './components';
+import { Nav, Home, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, SkillScannerApp, MusicApp } from './components';
 import styles from './App.module.css';
 
 //LAZY LOADS
@@ -38,6 +38,7 @@ const App = () => {
             <Route path="/projects/flappy-bird-app" component={FlappyBirdApp} />
             <Route path="/projects/covid-tracker" component={CovidTrackerApp} />
             <Route path="/projects/Skillscanner-app" component={SkillScannerApp} />
+            <Route path="/projects/music-app" component={MusicApp} />
           </Switch>  
         </animated.div>
       ))}

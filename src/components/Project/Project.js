@@ -7,6 +7,7 @@ import WeatherApp from '../../assets/img/weather/image1.jpg';
 import RestaurantApp from '../../assets/img/restaurant/image1.jpg';
 import FlappyBirdApp from '../../assets/img/flappybird/image1.jpg';
 import CovidTracker from '../../assets/img/covidtracker/image1.jpg';
+import MusicApp from '../../assets/img/music/image1.jpg';
 import SkillScannerApp from '../../assets/img/skillscanner/image1.jpg';
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import { Footer, ProjectComponent } from '../index';
@@ -18,6 +19,7 @@ const Project = () => {
         {name: 'restaurant-app', image: RestaurantApp, skillsets: ['React', 'AWS', 'Cognito', 'DynamoDB', 'Lambda', 'MaterialUI']},
         {name: 'flappy-bird-app', image: FlappyBirdApp, skillsets: ['React', 'Redux']},
         {name: 'covid-tracker', image: CovidTracker, skillsets: ['React', 'ChartJS', 'MaterialUI']},
+        {name: 'music-app', image: MusicApp, skillsets: ['React', 'TypeScript', 'NodeJS', 'MongoDB']},
     ]
     return (
         <AbsoluteWrapper>
