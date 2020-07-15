@@ -17,7 +17,7 @@ const Project = () => {
         {name: 'skillscanner-app', image: SkillScannerApp, skillsets: ['React', 'Firebase', 'Firestore']},
         {name: 'weather-app', image: WeatherApp, skillsets: ['React', 'NodeJS', 'MongoDB', 'Leaflet', 'Redux', 'Passport', 'Bootstrap']},
         {name: 'restaurant-app', image: RestaurantApp, skillsets: ['React', 'AWS', 'Cognito', 'DynamoDB', 'Lambda', 'MaterialUI']},
-        {name: 'flappy-bird-app', image: FlappyBirdApp, skillsets: ['React', 'Redux']},
+        {name: 'flappy-bird-app', image: FlappyBirdApp, skillsets: ['JavaScript', 'HTML', 'CSS']},
         {name: 'covid-tracker', image: CovidTracker, skillsets: ['React', 'ChartJS', 'MaterialUI']},
         {name: 'music-app', image: MusicApp, skillsets: ['React', 'TypeScript', 'NodeJS', 'MongoDB']},
     ]
