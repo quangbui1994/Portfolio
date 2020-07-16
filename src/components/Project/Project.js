@@ -9,6 +9,7 @@ import FlappyBirdApp from '../../assets/img/flappybird/image1.jpg';
 import CovidTracker from '../../assets/img/covidtracker/image1.jpg';
 import MusicApp from '../../assets/img/music/image1.jpg';
 import SkillScannerApp from '../../assets/img/skillscanner/image1.jpg';
+import HousingApp from '../../assets/img/housing/image1.jpg'
 import AbsoluteWrapper from '../../hoc/AbsoluteWrapper';
 import { Footer, ProjectComponent } from '../index';
 
@@ -20,6 +21,7 @@ const Project = () => {
         {name: 'flappy-bird-app', image: FlappyBirdApp, skillsets: ['JavaScript', 'HTML', 'CSS']},
         {name: 'covid-tracker', image: CovidTracker, skillsets: ['React', 'ChartJS', 'MaterialUI']},
         {name: 'music-app', image: MusicApp, skillsets: ['React', 'TypeScript', 'NodeJS', 'MongoDB']},
+        {name: 'housing-app', image: HousingApp, skillsets: ['React', 'CSS', 'HTML']},
     ]
     return (
         <AbsoluteWrapper>
