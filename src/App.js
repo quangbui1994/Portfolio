@@ -39,7 +39,7 @@ const App = () => {
             <Route path="/projects/covid-tracker" component={CovidTrackerApp} />
             <Route path="/projects/Skillscanner-app" component={SkillScannerApp} />
             <Route path="/projects/music-app" component={MusicApp} />
-            <Route path="/projects/housing-landing-page" component={HousingApp} />
+            <Route path="/projects/housing-app" component={HousingApp} />
           </Switch>  
         </animated.div>
       ))}
