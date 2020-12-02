@@ -50,11 +50,12 @@ const Nav = ({ history }) => {
 
     const transitionModal = useTransition(showModal ? items : [], p => p.to, {
         ref: transitionModalRef,
-        config: config.gentle,
+        //Fix the time delay
+        config: {...config.gentle, duration: 500},
         trail: 300 / items.length,
-        from: { opacity: 0, transform: 'translateX(-50%)'},
-        enter: { opacity: 1, transform: 'translateX(0)'},
-        leave: { opacity: 0, transform: 'translateX(-50%)'},
+        from: { opacity: 0, transform: 'translate3d(-100%, 0, 0)'},
+        enter: { opacity: 1, transform: 'translate3d(0, 0, 0)'},
+        leave: { opacity: 0, transform: 'translate3d(-100%, 0, 0)'},
     });
 
     useChain(showModal ? [springRef, transitionModalRef] : [transitionModalRef, springRef], [0, showModal ? .5 : 1]);

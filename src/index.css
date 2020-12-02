@@ -18,6 +18,11 @@ body {
   font-size: 1.6rem
 }
 
+/* Remove scroll bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;

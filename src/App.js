@@ -3,6 +3,7 @@ import { __RouterContext, Route, Switch } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 
 import { Nav, Home, CovidTrackerApp, RestaurantApp, WeatherApp, FlappyBirdApp, SkillScannerApp, MusicApp, HousingApp } from './components';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import styles from './App.module.css';
 
 //LAZY LOADS
@@ -11,7 +12,8 @@ const ProjectLazy = import('./components/Project/Project');
 const About = lazy(() => AboutLazy);
 const Project = lazy(() => ProjectLazy);
 
-const loading = (<>Loading</>);
+//Loading screen for initial load
+const loading = LoadingScreen;
 
 const App = () => {
   const { location } = useContext(__RouterContext);

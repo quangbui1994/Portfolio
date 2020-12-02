@@ -11,15 +11,17 @@ const About = ({ history }) => {
     const [firstProps, setFirst] = useSpring(() => ({ y: 0 }));
     const [secondProps, setSecond] = useSpring(() => ({ y: 0 }));
 
-    const bind = useWheel(({ direction: [yDir], distance, wheeling }) => {
-        if (yDir > 0 && distance > window.innerHeight / 20 && wheeling) {
-            setFirst({ y: - window.innerHeight});
-            setSecond({ y: - window.innerHeight });
-        } else if (yDir < 0 && distance > window.innerHeight / 20 && wheeling) {
-            setFirst({ y: 0 });
-            setSecond({ y: 0 });
-        }
-    });
+    // const bind = useWheel(({ direction: [yDir], distance, wheeling }) => {
+    //     if (yDir > 0 && distance > window.innerHeight / 20 && wheeling) {
+    //         console.log('going down')
+    //         setFirst({ y: - window.innerHeight});
+    //         setSecond({ y: - window.innerHeight });
+    //     } else if (yDir < 0 && distance > window.innerHeight / 20 && wheeling) {
+    //         console.log('going up')
+    //         setFirst({ y: 0 });
+    //         setSecond({ y: 0 });
+    //     }
+    // });
 
     const click = () => {
         history.push('/projects');
@@ -27,7 +29,7 @@ const About = ({ history }) => {
 
     return (
         <AbsoluteWrapper>
-            <animated.div className={styles.About} {...bind()}>
+            <animated.div className={styles.About}>
                 <animated.div className={styles.section} style={{
                     transform: firstProps.y.interpolate(y => `translate3d(0, ${y}px, 0)`)
                 }}>
